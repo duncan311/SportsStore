@@ -9,7 +9,7 @@ namespace SportsStore.Models
     public class ProductDbContext : DbContext
     {
         public ProductDbContext()
-            : base("SportsStoreDB")
+            : base("name=SportsEntity")
         {
             Database.SetInitializer<ProductDbContext>(new ProductDbInitializer());
         }
