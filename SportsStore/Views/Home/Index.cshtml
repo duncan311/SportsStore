@@ -1,0 +1,21 @@
+﻿<div class="alert alert-danger" ng-show="showError">{{error}}</div>
+
+<div class="panel panel-primary" ng-controller="authenticateController">
+    <div class="panel-heading">Authentication</div>
+    <table class="table table-striped">
+        <tr><td>Authenticated:</td><td>{{authenticated}}</td></tr>
+        <tr><td>User: </td><td>{{username}}</td></tr>
+        <tr><td colspan="2"><button ng-click="authenticate()">Authenticate</button></td></tr>
+    </table>
+</div>
+
+<div class="panel panel-primary" ng-controller="productsController">
+    <div class="panel-heading">Product Controller Functions</div>
+    <table class="table table-striped">
+        <tr>
+            <td><button ng-click="getProducts()">Get Products</button></td>
+            <td><button ng-click="testDeleteProduct(2)">Delete Product</button></td>
+            <td><button ng-click="testChangeProduct()">Change Product</button></td>
+        </tr>
+    </table>
+</div>
